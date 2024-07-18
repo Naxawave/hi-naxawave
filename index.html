@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <title>Hi - Tutoriales y cursos de Roblox Studio</title>
+</head>
+<body>
+  
+    <!--=============== LOAD ===============-->
+    <div class="load_Window" id="loadWindow">
+      <div class="contentLoadWindow">
+        <div class="loadTitle">Hi</div>
+        <h4>Cursos y Tutoriales</h4>
+        <h6>Naxawave Group</h6><hr>
+      </div>
+    </div>
+  
+    <!--=============== NAV ===============-->
+    <nav class="nav" id="nav">
+        <div class="nav__menu container" id="nav-menu">
+            <div class="nav__shape"></div>
+
+            <div class="nav__close" id="nav-close">
+                <i class='ri-close-line'></i>
+            </div>
+            
+            <div class="nav__data">
+                <div class="nav__mask">
+                    <!-- Change your profile picture -->
+                    <img src="https://i.imgur.com/BppMXND.png" alt="" class="nav__img">
+                </div>
+
+                <span class="nav__greeting">Hola de nuevo</span>
+                <h2 class="nav__name">Usuario</h2>
+            </div>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class='ri-home-line'></i> Inicio
+                    </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#courses" class="nav__link">
+                    <i class='ri-book-open-line'></i> Cursos
+                  </a>
+                </li>
+                 <li class="nav__item">
+                   <a href="#tutorials" class="nav__link">
+                     <i class='ri-youtube-line'></i> Tutoriales 
+                   </a>
+                 </li>
+                 <li class="nav__item">
+                   <a href="#templates" class="nav__link">
+                     <i class='ri-file-line'></i> Plantillas 
+                   </a>
+                 </li>
+                 <li class="nav__item">
+                   <a href="#news" class="nav__link">
+                     <i class='ri-youtube-line'></i> Noticias
+                   </a>
+                 </li>
+                <li class="nav__item">
+                  <a href="#saved" class="nav__link">
+                    <i class='ri-star-line'></i> Favoritos 
+                  </a>
+                </li>
+                <hr>
+                <li class="nav__item">
+                    <a href="about-us" class="nav__link">
+                        <i class='ri-question-line'></i> Quienes somos
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="settings.html" class="nav__link">
+                        <i class='ri-settings-line'></i> Ajustes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--=============== MAIN ===============-->
+    <main class="main" id="main">
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="header__nav container">
+                <a href="#" class="header__logo">
+                    Hi
+                </a>
+
+                <!-- Toggle button -->
+                <div class="header__toggle" id="header-toggle">
+                    <i class='ri-menu-line'></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- When inserting your content into sections, remove the section__height class -->
+        <!--=============== HOME ===============-->
+        <section class="section section__height container_section" id="home">
+            <h1>INICIO</h1>
+            <p class="container_subtitle" >Hola Usuario.</p><hr>
+            
+            <section class="content_cards">
+              <div class="card_container home">
+                
+                
+                <div class="update-card" id="updateCard">
+                  <img src="" id="updateImg" class="update-image">
+                  <div class="update-content">
+                    <h3 class="update-title" id="updateTitle">Error al cargar el titulo</h3>
+                    <p class="update-description" id="updateDescription">Error al cargar la descripción.</p>
+                    <p class="update-info">Fecha de lanzamiento: <span class="release-date" id="releaseDate">00/00/00</span></p>
+                    <p class="update-info">Versión: <span class="version" id="updateInfo">0.0.0</span></p>
+                    <button class="download-button" id="downloadButton">Descargar</button>
+                  </div>
+                </div>
+                
+               
+              </div>
+            </section>
+        </section>
+
+        <!--=============== COURSES ===============-->
+        <section class="section section__height container_section" id="courses">
+            <h1>CURSOS</h1>
+            <p class="container_subtitle" >Entra a los cursos mas recientes.</p><hr>
+            
+            <section class="content_cards">
+              <div class="card_container courses" id="coursesContainer">
+                
+                <div class="msg_courses" id="msgCourses">
+                  <p>Lo sentimos, algo ocurrió al cargar las noticias.</p>
+                </div>
+                
+
+              </div>
+            </section>
+        </section>
+
+        <!--=============== TUTORIALS ===============-->
+        <section class="section section__height container_section" id="tutorials">
+            <h1>TUTORIALES</h1>
+            <p class="container_subtitle">Aprende cosas nuevas.</p><hr>
+            <div class="more_cards" id="showMoreTutorialCards">
+              Ver mas <i class='ri-arrow-right-line'></i>
+            </div>
+            <div class="search_tutorials">
+              <input type="searcg" id="searchTutorials" placeholder="Buscar por cardCode"> <span id="cardCounter"></span>
+            </div>
+            
+            
+            <section class="content_cards">
+              <div class="card_container tutorials" id="tutorials_container">
+                
+               <div class="msg_tutorials" id="msgTutorials">
+                  <p>Lo sentimos, algo ocurrió al cargar los tutoriales.</p>
+              </div>
+            
+              </div>
+              
+              <section class="openinfo">
+                  <div class="more__info">
+                    
+                    <div class="copy_alert" id="copyAlert">
+                      <div class="copy_content">
+                        <p>Se ha copiado el cardCode al portapapeles.</p>
+                      </div>
+                    </div>
+                    
+                    <div class="close__info" id="closeInfo"><i class='ri-close-line'></i></div>
+                    <div class="content__card">
+                      <div class="info__card">
+                        <div class="img_card"><img id="cardImg" src=""></div>
+                
+                        <h2 class="title__card" id="cardTitle"></h2>
+                        <div class="subcontent_card">
+                          <h4 class="author_card" id="authorCard"> </h4> •
+                          <p class="duration__card" id="duration"></p><span>Min</span>
+                        </div><br>
+                        
+                        <div class="sub_buttons">
+                          <a href="" id="cardVideo" class="button_link"><i class="ri-youtube-line"></i></a> •
+                          <a class="button_link save_button"><i class="ri-bookmark-line"></i></a> •
+                          <a class="button_link share_button"><i class="ri-share-forward-line"></i></a> •
+                          <a href="report.html" class="button_link"> <i class="ri-information-line"></i></a>
+                        </div>
+                        
+                        <h4 class="description__card" id="cardDescription">
+                        </h4>
+                        <div class="buttons_card">
+                          <a href="" id="link1" class="button_link">Enlace 1</a>
+                        </div><br>
+                        <span>CardCode</span> <h5 id="cardcode"></h5>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </section>
+            </section>
+        </section>
+        
+        <!--=============== TEMPLATES===============-->
+        <section class="section section__height container_section" id="templates">
+            <h1>PLANTILLAS</h1>
+            <p class="container_subtitle" >Modifica y crea rus experiencias.</p><hr>
+            
+            <section class="content_cards">
+              <div class="card_container templates" id="">
+                
+                <div class="msg_templates" id="msgTemplates">
+                  <p>Lo sentimos, algo ocurrió al cargar las plantillas.</p>
+                </div>
+                
+
+              </div>
+            </section>
+        </section>
+        
+        <!--=============== NEWS ===============-->
+        <section class="section section__height container_section" id="news">
+            <h1>NOTICIAS</h1>
+            <p class="container_subtitle" >Enterate de todo.</p><hr>
+            
+            <section class="content_cards">
+              <div class="card_container news" id="newsContainer">
+                
+                <div class="msg_news" id="msgNews">
+                  <p>Lo sentimos, algo ocurrió al cargar las noticias.</p>
+                </div>
+            
+            
+              </div>
+            </section>
+            <section class="newsWindow" id="NewsWin">
+              <div class="newsContent">
+                <div class="window_news_img">
+                  <img src="">
+                </div>
+                <h2 class="text_news" id="txtNews"></h2>
+                <span class="content_news" id="ctnNews"></span><br>
+                <button class="open_news_button">Abrir</button><br>
+                <button class="close_news_button">Cerrar</button><br>
+                <h6 class="news_date"></h6>
+              </div>
+            </section>
+        </section>
+
+        <!--=============== SAVED ===============-->
+        <section class="section section__height container_section" id="saved">
+            <h1>FAVORITOS</h1>
+            <p class="container_subtitle" >Tus tutoriales favoritos.</p><hr>
+            
+            <section class="content_cards">
+              <div class="card_container saved" id="savedCardsContainer">
+            
+            
+              </div>
+            </section>
+        </section>
+        
+        <br>
+        
+        <section class="section__height container_section tag_area">
+            <p class="container_subtitle" >Etiquetas (ignorar)</p><hr>
+            
+            <section class="content_cards">
+              <div class="card_container tags">
+                <span class="tag">Roblox</span>
+                <span class="tag">Eventos</span>
+                <span class="tag">Novedades</span>
+                <span class="tag">Catálogos</span>
+                <span class="tag">Juegos</span>
+                <span class="tag">Popular</span>
+                <span class="tag">Ropa</span>
+                <span class="tag">Comunidad</span>
+                <span class="tag">Youtubers</span>
+                <span class="tag">Creadores</span>
+                <span class="tag">Studio</span>
+                <span class="tag">UGC</span>
+            
+              </div>
+            
+              </div>
+            </section>
+        </section>
+        
+        <!--=============== CUSTOMIZABLE AD ===============-->
+        <section class="section__height container_section">
+          <a href="#" id="adContainer"><img src="https://i.imgur.com/QYtXvuW.png"></a>
+        </section>
+        
+        
+        <section class="copyright">
+          <h6>Rights are reserved to Naxawave Group ©2024</h6>
+          <a href="https://www.roblox.com/game-pass/155804406/More-resistance">Apoyar</a>
+          <br>
+        </section>
+    </main>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/functions_cards.js"></script>
+    <script src="assets/js/functions_courses.js"></script>
+    <script src="assets/js/functions_news.js"></script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const loadWindow = document.getElementById('loadWindow');
+        const appStart = sessionStorage.getItem('app_start');
+        const html = document.documentElement;
+      
+        html.classList.add('no_scroll');
+      
+        if (!appStart) {
+          setTimeout(() => {
+            loadWindow.classList.add('hide');
+            sessionStorage.setItem('app_start', 'true');
+            html.classList.remove('no_scroll');
+          }, 200);
+        } else {
+          loadWindow.classList.add('hide');
+          html.classList.remove('no_scroll');
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        fetch('https://naxawave.github.io/updateSystem-test-v1/update.json')
+          .then(response => response.json())
+          .then(data => {
+            const updateCard = document.getElementById('updateCard');
+            if (data.updateAvailable) {
+              document.getElementById('updateImg').src = data.updateImage;
+              document.getElementById('updateTitle').innerText = data.updateTitle;
+              document.getElementById('updateDescription').innerText = data.updateDescription;
+              document.getElementById('releaseDate').innerText = data.updateDate;
+              document.getElementById('updateInfo').innerText = data.updateVersion;
+      
+              document.getElementById('downloadButton').onclick = () => {
+                window.location.href = data.updateUrl;
+              };
+              updateCard.style.display = 'block';
+            } else {
+              updateCard.style.display = 'none';
+            }
+          })
+          .catch(error => {
+            console.error('Error fetching the update data:', error);
+          });
+      });
+    </script>
+    
+</body>
+</html>
